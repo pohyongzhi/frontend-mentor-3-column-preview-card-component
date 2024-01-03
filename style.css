@@ -33,6 +33,7 @@ main {
     border-radius: 0.5rem;
     overflow: hidden;
     display: grid;
+    max-width: 920px;
 }
 
 .component__sedan {
@@ -49,6 +50,27 @@ main {
 
 .component__sedan button {
     color: var(--clr-p-bright-orange);
+}
+
+.component__sedan button:hover {
+    cursor: pointer;
+    color: var(--clr-p-very-light-gray-background-headings-buttons);
+    background-color: var(--clr-p-bright-orange);
+    border: 1px white solid;
+}
+
+.component__suv button:hover {
+    cursor: pointer;
+    color: var(--clr-p-very-light-gray-background-headings-buttons);
+    background-color: hsl(184, 100%, 22%);
+    border: 1px white solid;
+}
+
+.component__luxury button:hover {
+    cursor: pointer;
+    color: var(--clr-p-very-light-gray-background-headings-buttons);
+    background-color: var(--clr-p-very-dark-cyan);
+    border: 1px white solid;
 }
 
 .component__suv button {
@@ -75,10 +97,21 @@ main {
 }
 
 .btn {
-    width: 60%;
+    width: 65%;
     border-radius: 2rem;
     padding: 0.75rem;
     border-style: none;
     background-color: var(--clr-p-very-light-gray-background-headings-buttons);
     font-size: 0.875rem;
+}
+
+@media screen and (min-width: 600px) {
+    .component {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .btn {
+        margin-top: 3.5rem;
+    }
 }
