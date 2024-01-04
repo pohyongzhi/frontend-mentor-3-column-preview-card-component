@@ -103,6 +103,7 @@ main {
     border-style: none;
     background-color: var(--clr-p-very-light-gray-background-headings-buttons);
     font-size: 0.875rem;
+    border: 1px white solid;
 }
 
 @media screen and (min-width: 600px) {
